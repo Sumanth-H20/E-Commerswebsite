@@ -28,17 +28,17 @@ now create the new config file
 vi  /etc/apache2/sites-available/E-Commerswebsite
 
 <VirtualHost *:80>
-		ServerAdmin admin@.com
-		DocumentRoot /var/www/E-Commerswebsite
-		ServerName ec2-13-215-46-95.ap-southeast-1.compute.amazonaws.com
-		Serveralias www.ec2-13-215-46-95.ap-southeast-1.compute.amazonaws.com
-		<Directory /var/www/E-Commerswebsite/>
-			Options +FollowSymlinks
-			AllowOverride All
-			Require all granted
-		</Directory>
-		ErrorLog ${APACHE_LOG_DIR}/error.log
-		CustomLog ${APACHE_LOG_DIR}/access.log combined
+	ServerAdmin admin@.com
+	DocumentRoot /var/www/E-Commerswebsite
+	ServerName ec2-13-215-46-95.ap-southeast-1.compute.amazonaws.com
+	Serveralias www.ec2-13-215-46-95.ap-southeast-1.compute.amazonaws.com
+	<Directory /var/www/E-Commerswebsite/>
+		Options +FollowSymlinks
+		AllowOverride All
+		Require all granted
+	</Directory>
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 
 :wq!
